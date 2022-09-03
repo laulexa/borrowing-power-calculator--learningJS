@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Borrowing Power Calculator</title>
+</head>
+<body>
+    <main class="wrapper">
+        <h1 class="title">Borrowing Power Calculator</h1>
+        <p class="question">How much could I borrow?</p>
+        <form class="income-debts">
+             <div class="income">
+                <p class="subtitle">Your earnings</p>
+                <label for="monthly-income" class="label">
+                    <span>Your monthly income</span>
+                    <input id="monthly-income" type="number">
+                </label>
+                <label for="monthly-other-income" class="label">
+                    <span>Your monthly other income (optional)</span>
+                    <input id="monthly-other-income" type="number">
+                </label>
+            </div>
+            <div class="expenses">
+                <p class="subtitle">Your expenses</p>
+                <label for="monthly-living-expenses" class="label">
+                    <span>Monthly living expenses</span>
+                    <input id="monthly-living-expenses" type="number">
+                </label>
+                <label for="other-monthly-commitments" class="label"> <span>Other monthly commitments (optional)</span>
+                    <input id="other-monthly-commitments" type="number">
+                </label>
+            </div>
+        </form>
+        <div class="button-container">
+            <button id="calculateBorrowingPower" type="button">Calculate Borrowing Power</button>
+        </div>
+        <p class="answer"></p>
+    </main>
+    <script src="./borrowingPowerCalculator.js"></script>
+</body>
+</html>
